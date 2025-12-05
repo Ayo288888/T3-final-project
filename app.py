@@ -150,17 +150,16 @@ def get_ai_coach_advice(api_key, name, current_cgpa, last_gpa, trend):
         """
         
         response = client.chat_completion(
-            model="HuggingFaceH4/zephyr-7b-beta",
+            model="microsoft/Phi-3.5-mini-instruct", # <--- SWITCHED TO PHI-3.5
             messages=[
                 {"role": "system", "content": "You are a supportive, concise academic mentor."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=1024,
+            max_tokens=500,
             temperature=0.7
         )
         
         text = response.choices[0].message.content
-        # Fix: Ensure text is string for re.sub
         clean_text = re.sub(r'\[.*?\]', '', str(text)).strip()
         return clean_text
         
