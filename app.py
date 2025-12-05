@@ -150,7 +150,7 @@ def get_ai_coach_advice(api_key, name, current_cgpa, last_gpa, trend):
         """
         
         response = client.chat_completion(
-            model="mistralai/Mixtral-8x7B-Instruct-v0.1", # <--- SWITCHED TO PHI-3.5
+            model="HuggingFaceTB/SmolLM3-3B:hf-inference", # <--- SWITCHED TO PHI-3.5
             messages=[
                 {"role": "system", "content": "You are a supportive, concise academic mentor."},
                 {"role": "user", "content": prompt}
