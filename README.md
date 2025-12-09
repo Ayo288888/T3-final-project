@@ -5,9 +5,9 @@ This project is a Streamlit application that analyzes student academic transcrip
 
 ## 2. Links & Deliverables 🔗
 * **Live App:** [(https://t3-final-project-fdsnqqtm3ixnyvai9cyglk.streamlit.app/)]
-* **Presentation Slides:** [Link to presentation_slides.pdf in this repo]
-* **Notebook (HTML Export):** [Link to output/analysis_notebook.html]
-
+* **Presentation Slides:** [View PDF Slides](./project_slides.pdf)
+* **Jupyter Notebook (Code):** [View Source Code](./t3-final-project.ipynb)
+* **Notebook (Export):** [View Notebook Export](./t3-final-project.pdf)
 ## 3. Dataset & Data Sourcing 📊
 * **Source:** The data is user-generated. Users upload a CSV transcript or manually input their grades.
 * **Cleaning Process:**
